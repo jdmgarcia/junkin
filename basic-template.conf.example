@@ -1,0 +1,5 @@
+<VirtualHost 10.14.240.10:80>
+    ServerName basic-template.<name_user>
+    DocumentRoot /home/<name_user>/public_html/basic-template
+    SetEnv PHP_ENV development
+</VirtualHost>

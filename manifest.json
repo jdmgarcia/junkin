@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "main.css": {
+      "files": [
+        "sass/main.scss"
+      ],
+      "main": true
+    },
+    "vendor.css": {
+      "files": [
+        "plugins/fancybox/jquery.fancybox.css",
+        "plugins/owl.carousel/assets/owl.carousel.css"
+      ]
+    },
+    "vendor.min.js":{
+      "files":[
+        "js/vendor/consolelog.js",
+        "js/vendor/modernizr-latest.js",
+        "js/vendor/jquery-2.1.4.js",
+        "plugins/fancybox/jquery.fancybox.js",
+        "plugins/owl.carousel/owl.carousel.js"
+      ]
+    },
+    "main.min.js":{
+      "files":[
+        "js/_main.js"
+      ]
+    }
+  },
+  "paths": {
+    "source": "",
+    "dist": "dist/"
+  }
+}

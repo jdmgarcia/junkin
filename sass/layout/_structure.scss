@@ -1,0 +1,29 @@
+/*=================================
+=            STRUCTURE            =
+=================================*/
+
+.content-container {
+  @extend %content-container;
+}
+
+.standard-container {
+  max-width: 100%;
+  margin: $s-gutter-phone;
+  padding: $s-gutter-phone 0;
+
+  @include media-query("phone") {
+    max-width: $s-content-width;
+    margin: $s-gutter auto;
+    padding: $s-gutter;
+  }
+
+  @include media-query("desktop") {
+    padding: $s-gutter 0;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+/*=====  End of STRUCTURE  ======*/

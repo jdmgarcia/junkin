@@ -1,0 +1,87 @@
+/*==========================================
+=            DEFAULT COMPONENTS            =
+==========================================*/
+
+.clearfix {
+  @extend %clearfix;
+}
+
+
+/*----------  Accessibility  ----------*/
+
+.hidden {
+  display: none;
+}
+
+.offscreen {
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+}
+
+.offscreen-no-mobile {
+  @include media-query("phone") {
+    clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; /* added line */
+    width: 1px;
+  }
+}
+
+
+/*----------  Skip  ----------*/
+
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.skip:active, 
+.skip:focus, 
+.skip:hover {
+  left: 20px; 
+  top: 20px;
+  padding: 10px;
+  background-color: transparent;
+  color: $black;
+  width: auto; 
+  height: auto; 
+  overflow: visible;
+  z-index: 3;
+}
+
+/*----------  SVG icon sprite  ----------*/
+
+.svg-sprite {
+  display: none;
+}
+
+.svg-icon {
+  display: inline-block; /* Flow with text content */
+  fill: currentColor; /* Inherit the parent text color */
+  height: 1.2em; /* Use the parent font-size for width and height */
+  width: 1.2em; /* Use the parent font-size for width and height */
+  vertical-align: middle; /* Vertically align icon with adjacent text */
+  position: relative; /* Align nicely with capital letters */
+  top: -.0625em;
+}
+
+/*----------  Testing  ----------*/
+
+test {
+  font-family: $f-body;
+}
+
+/*=====  End of DEFAULT COMPONENTS  ======*/

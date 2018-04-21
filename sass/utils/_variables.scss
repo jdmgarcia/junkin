@@ -1,0 +1,55 @@
+/*=================================
+=            VARIABLES            =
+=================================*/
+
+/* All Variables should be declared here which makes it easier to update if something changes globally */
+
+// If prefixed with x- should only be assigned to other variables, not used on their own.
+// If prefixed with c- this means the variable defines a colour
+// If prefixed with s- this means the variable defines a sizing measurement
+// If prefixed with f- this means the variable defines a font family
+// If prefixed with g- this means the variable defines something global
+
+//Global Responsive variables - see breakpoint manager mixin
+$g-phone-narrow-breakpoint-min-width: 34em;
+$g-phone-breakpoint-min-width: 47.99em; // make sure this doesn't apply to ipad portrait
+$g-tablet-breakpoint-min-width: 62em; // 992
+$g-desktop-breakpoint-min-width: 90em; // 1440 allow for specific styles on very large screens
+
+
+// Base Typography
+$g-font-size: 16px; // 16px - see base font-size reset in isobar-reset.scss
+$g-line-height: 1.5; // 24px - should match the gutter size below
+
+
+// Global Fonts
+$f-body: 'OpenSans-Light';
+$f-bold: 'OpenSans-Light';
+$f-heading: 'OpenSans-Light';
+$f-heading-bold: 'OpenSans-Light';
+$f-fallback: Arial, sans-serif;
+
+
+// Grid Gutters (can be used to add padding and keep spacing consistent)
+$s-gutter: 24px;
+$s-gutter-phone: 12px;
+$s-gutter-phone-narrow: 6px;
+
+
+// Use to keep consistent spacing in line with the grid gutters and line height
+$s-vertical-spacer: 24px;
+
+
+// Layout size
+$s-content-width: 59.5em; // 952px
+
+
+// Colour variables - split background colours and text colours
+// Colour names for same colour variations can be generated using 
+// http://chir.ag/projects/name-that-color/, avoid grey, light-grey, light-grey2, light-grey-3!
+$white: #ffffff;
+$black: #000000;
+$c-body-text: #333333;
+
+
+/*=====  End of VARIABLES  ======*/

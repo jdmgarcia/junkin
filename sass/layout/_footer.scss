@@ -1,0 +1,78 @@
+/*==============================
+=            FOOTER            =
+==============================*/
+
+/*----------  Cookies  ----------*/
+
+.cookie-notice-full-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #1d1d1d;
+  color: $white;
+  font-size: 1.4rem;
+  z-index: 2;
+
+  &.is-shown {
+    display: block !important;
+  }
+}
+
+.cookie-notice-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @include media-query('tablet') {
+    flex-direction: row;
+  }
+
+  @include media-query('desktop') {
+    padding: 0;
+  }
+}
+
+.cookie-notice-link {
+  color: $white;
+
+  &:hover {
+    color: #eef1f7;
+    text-decoration: none;
+  }
+}
+
+.cookie-notice-content {
+  padding: 0 20px;
+
+  @include media-query('tablet') {
+    padding: 0;
+  }
+}
+
+.cookie-notice-cta {
+  color: $white;
+  text-decoration: none;
+  border: 2px solid $white;
+  border-radius: 3px;
+  padding: 5px 15px;
+
+  &:hover {
+    color: #eef1f7;
+    border: 2px solid #eef1f7;
+  }
+}
+
+.cookie-notice-cta-container {
+  margin: 20px 0 0;
+
+  @include media-query('tablet') {
+    margin: 0;
+  }
+}
+
+
+/*=====  End of FOOTER  ======*/

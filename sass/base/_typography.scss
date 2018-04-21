@@ -1,0 +1,31 @@
+/*==================================
+=            TYPOGRAPHY            =
+==================================*/
+
+/* Declare font face variations here - make sure to update the source url with the theme name, font name and install font files in /assets/fonts/ */
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Light.woff') format('woff'),
+       url('../fonts/OpenSans-Light.ttf') format('truetype'),
+       url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Declare site wide typography styles here */
+
+body {
+  font-family: $f-body, $f-fallback;
+  font-size: $g-font-size; /* 16px */
+  line-height: $g-line-height; /* 24px */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $f-heading, $f-fallback;
+}
+
+/*=====  End of TYPOGRAPHY  ======*/
