@@ -97,7 +97,7 @@ gulp.task('scripts', function() {
   manifest.forEachDependency('js', function(dep) {
     //console.log(dep.name);
     if (dep.name == 'main.min.js') {
-      deppipe = rollup({entry: path.source + 'js/_main.js'})
+      deppipe = rollup({entry: path.source + 'js/_main.js', format: 'es'})
         .pipe(source('_main.js', path.source + 'js'))
         .pipe(
           streamify(
