@@ -20,6 +20,7 @@ $g-desktop-breakpoint-min-width: 90em; // 1440 allow for specific styles on very
 // Base Typography
 $g-font-size: 16px; // 16px - see base font-size reset in isobar-reset.scss
 $g-line-height: 1.5; // 24px - should match the gutter size below
+$g-font-weight: 400;
 
 
 // Global Fonts
@@ -28,6 +29,7 @@ $f-bold: 'OpenSans-Light';
 $f-heading: 'OpenSans-Light';
 $f-heading-bold: 'OpenSans-Light';
 $f-fallback: Arial, sans-serif;
+$f-memory: 'lato', sans-serif;
 
 
 // Grid Gutters (can be used to add padding and keep spacing consistent)
@@ -50,6 +52,9 @@ $s-content-width: 59.5em; // 952px
 $white: #ffffff;
 $black: #000000;
 $c-body-text: #333333;
+$c-junkin: #ffffff;
+$c-memory-main-text: #5e5e5e;
+
 
 
 /*=====  End of VARIABLES  ======*/
