@@ -1,9 +1,6 @@
 /*===============================
 =            MEMORY            =
 ===============================*/
-body{
-	background-color: #F8F8FF;
-}
 // three greys and 2 whites in the project
 // h1 and h4 are fuckin up may BOLD styling
 
@@ -17,13 +14,10 @@ body{
 }
 
 .memory-header {
-	background: url("../../img/memory-header.png");
-	background-repeat: no-repeat;
+	background: url("../../img/memory-header.png") no-repeat center;
 	background-size: cover;
-	background-position: center;
 	display: none;
-	height:198px;
-	border:1px solid Transparent;
+	height: 198px;
 	@include media-query("phone") {
 	  display: block;
 	}
@@ -38,7 +32,7 @@ body{
 	font-family: $f-memory;
 	font-size: 20px;
 	font-weight: 900;
-	margin:  67px 0 0 0;
+	margin: 67px 0 0 0;
 	padding: 0;
 
 	@include media-query("phone") {
