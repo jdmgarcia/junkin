@@ -94,29 +94,28 @@ body{
 	display: table;
 	max-width:1012px;
 	width:100%;
-	@include media-query("phone") {
-	  width:92%;
-	}
 	@include media-query("tablet") {
 	  width:84%;
 	}
 
 }
-S
+
 .memory-body-photo-symbol-container {
-	border: 1px blue solid;
 	margin-left: auto;
 	margin-right: auto;
 
 }
 
 .memory-body-picture-socialmedia{
-	border: 1px yellow solid;	
 	margin-left: auto;
 	margin-right: auto;
 	display: table;
+	@include media-query("tablet") {
+		float: left;
+	}
 	@include media-query("phone") {
 		float: left;
+	  margin-left: 15px;
 	}
 }
 
@@ -128,6 +127,7 @@ S
 	text-decoration: none;
 	margin: 10px 15px;
 	border-radius: 50%;
+	
 	@include media-query("phone") {
 		margin: 10px 35px 10px 5px;
 	}
@@ -175,10 +175,14 @@ S
 	border-radius: 4px;
 	font-weight: 700;
 	display: block;
-	border: 1px pink solid;	
 	@include media-query("phone") {
 		float: right;
+	  margin-right: 15px;
+	}
+	@include media-query("tablet") {
+		float: right;
 		margin: 5px 0 5px 5px;
+		
 	}
 }
 
