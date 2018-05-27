@@ -83,11 +83,12 @@
 }
 
 .memory-body-photo-container {
+	@extend %clearfix;
 	position: relative;
 	margin: 0 auto;
-	display: table;
 	max-width:1012px;
 	width:100%;
+
 	@include media-query("tablet") {
 	  width:84%;
 	}
@@ -103,13 +104,13 @@
 .memory-body-picture-socialmedia{
 	margin-left: auto;
 	margin-right: auto;
-	display: table;
+
 	@include media-query("tablet") {
 		float: left;
 	}
 	@include media-query("phone") {
 		float: left;
-	  margin-left: 10px;
+	  	margin-left: 10px;
 	}
 }
 
@@ -171,7 +172,7 @@
 	display: block;
 	@include media-query("phone") {
 		float: right;
-	  margin-right: 15px;
+	  	margin-right: 15px;
 	}
 	@include media-query("tablet") {
 		float: right;
@@ -185,6 +186,7 @@
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-bottom: 35px;
+
 	@include media-query("phone") {
 		width: 760px;
 		margin-left: auto;
@@ -198,21 +200,22 @@
 }
 
 .memories-comments-container {
-	width:100%;
+	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
-		@include media-query("tablet") {
+
+	@include media-query("tablet") {
 		width: 990px;
 		margin-right: auto;
 		margin-left: auto;
-		}
-		
 	}
+	
+}
 
 .memories-comments-title {
 	margin-bottom: 3px;
 	padding: -1px;
-	}
+}
 
 
 .memories-comments-button {
@@ -271,4 +274,5 @@
 	border: 1px solid #969696;
 	border-radius: 4px;
 }
+
 /*=====  End of MEMORY  ======*/
