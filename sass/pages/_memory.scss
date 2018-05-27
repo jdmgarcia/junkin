@@ -1,29 +1,26 @@
 /*===============================
 =            MEMORY            =
 ===============================*/
-body{
-	background-color: #F8F8FF;
-}
 // three greys and 2 whites in the project
 // h1 and h4 are fuckin up may BOLD styling
 
-#maincontent{
+#maincontent {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: $f-memory;
 	font-size: $g-font-size;
 	font-weight: $g-font-weight;
-	color: $c-memory-main-text;
+	color: $c-memory-main-text ;
 }
 
 .memory-header {
-	background: url("../../img/memory-header.png");
-	background-repeat: no-repeat;
+	background: url("../../img/memory-header.png") no-repeat center;
 	background-size: cover;
-	background-position: center;
-	display: block;
-	height:198px;
-	border:1px solid Transparent;
+	display: none;
+	height: 198px;
+	@include media-query("phone") {
+	  display: block;
+	}
 }
 //what the fuckc is the problem with margins in the header
 
@@ -35,7 +32,7 @@ body{
 	font-family: $f-memory;
 	font-size: 20px;
 	font-weight: 900;
-	margin:  67px 0 0 0;
+	margin: 67px 0 0 0;
 	padding: 0;
 
 	@include media-query("phone") {
@@ -43,10 +40,10 @@ body{
 	}
 }
 
-.memory-header-text{
+.memory-header-text {
 	color: $white;
 	text-align: center;
-	margin:  14px 0 0 0;
+	margin: 14px 0 0 0;
 	padding: 0;
 }
 
@@ -54,19 +51,22 @@ body{
 .memory-body-container {
 	margin-top: 22px;
 	margin-bottom: 22px;
-	width: 1236px;
+	width: 100%;
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 1236px;
 }
-
-
 
 .memory-body-header {
 	padding-top: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+	max-width: 760px;
+	@include media-query("phone") {
 	margin-left: auto;
 	margin-right: auto;
-	width: 760px;
+	}
 }
 
 .author {
@@ -86,6 +86,31 @@ body{
 	position: relative;
 	margin: 0 auto;
 	display: table;
+	max-width:1012px;
+	width:100%;
+	@include media-query("tablet") {
+	  width:84%;
+	}
+
+}
+
+.memory-body-photo-symbol-container {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.memory-body-picture-socialmedia{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	@include media-query("tablet") {
+		float: left;
+	}
+	@include media-query("phone") {
+		float: left;
+	  margin-left: 10px;
+	}
 }
 
 .fa {
@@ -94,8 +119,12 @@ body{
 	width: 31px;
 	text-align: center;
 	text-decoration: none;
-	margin: 10px 35px 10px 5px;
+	margin: 10px 15px;
 	border-radius: 50%;
+	
+	@include media-query("phone") {
+		margin: 10px 35px 10px 5px;
+	}
 
 	&:hover {
 		opacity: 0.7;
@@ -128,22 +157,39 @@ body{
 }
 
 .memory-body-photo-download-button {
-	float: right;
-	margin: 5px;
-	width: 253px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 250px;
 	height: 41px;
 	color: $white;
 	background-color: #297e2e;
 	border: none;
 	border-radius: 4px;
 	font-weight: 700;
+	display: block;
+	@include media-query("phone") {
+		float: right;
+	  margin-right: 15px;
+	}
+	@include media-query("tablet") {
+		float: right;
+		margin: 5px 0 5px 5px;
+		
+	}
 }
 
 .memory-body-text {
-	width: 760px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
 	padding-bottom: 35px;
+	@include media-query("phone") {
+		width: 760px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .memory-body-hashtag {
@@ -152,9 +198,15 @@ body{
 }
 
 .memories-comments-container {
-	width: 990px;
-	margin-right: auto;
-	margin-left: auto;
+	width:100%;
+	padding-right: 15px;
+	padding-left: 15px;
+		@include media-query("tablet") {
+		width: 990px;
+		margin-right: auto;
+		margin-left: auto;
+		}
+		
 	}
 
 .memories-comments-title {
@@ -165,7 +217,7 @@ body{
 
 .memories-comments-button {
 	color: #297e2e;
-	background-color: Transparent;
+	background-color: transparent;
 	background-repeat: no-repeat;
 	cursor: pointer;
 	overflow: hidden;
@@ -189,34 +241,34 @@ body{
 	height: 1px;
 }
 
-.memories-comment-box{
+.memories-comment-box {
 	margin-right: auto;
 	margin-left: auto;
 	background-color: white;
 	margin-bottom: 10px;
 	margin-bottom: 10px;
 	border-radius: 3px;
-
+	width: 100%;
 }
 
-.memories-comment-author{
+.memories-comment-author {
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.memories-comment{
+.memories-comment {
 	margin-right: auto;
 	margin-left: auto;
-	width: 746px;	
+	max-width: 746px;
+	width: 100%;	
 	padding:10px;
 }
 
-.memory-nav-next{
+.memory-nav-next {
 	width: 32px;
 	height: 32px;
 	padding: 4px 12px;
 	border: 1px solid #969696;
 	border-radius: 4px;
-
 }
 /*=====  End of MEMORY  ======*/
