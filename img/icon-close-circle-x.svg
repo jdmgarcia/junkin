@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-1407" y="-17" width="1440" height="2985" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="rgb(255,255,255)" stroke="none" transform="translate(5.20068 5.20068)" d="M8.06056 6.75016e-16L4.29932 3.762L0.53732 0L0 0.53732L3.762 4.29932L6.75016e-16 8.06056L0.53732 8.59864L4.29932 4.83664L8.06056 8.59864L8.59788 8.06056L4.83664 4.29932L8.59788 0.53732L8.06056 6.75016e-16Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect x="-1407" y="-17" width="1440" height="2985" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<path fill="none" stroke="rgb(255,255,255)" stroke-width="1" stroke-miterlimit="4" transform="translate(5.20068 5.20068)" d="M8.06056 6.75016e-16L4.29932 3.762L0.53732 0L0 0.53732L3.762 4.29932L6.75016e-16 8.06056L0.53732 8.59864L4.29932 4.83664L8.06056 8.59864L8.59788 8.06056L4.83664 4.29932L8.59788 0.53732L8.06056 6.75016e-16Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_2">
+			<rect x="-1407" y="-17" width="1440" height="2985" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_2)">
+		<path fill="rgb(255,255,255)" stroke="none" d="M0 9.5C0 4.25296 4.25296 0 9.5 0C14.747 0 19 4.25296 19 9.5C19 14.7463 14.747 19 9.5 19C4.25296 19 0 14.7463 0 9.5ZM0.76 9.5C0.76 14.3093 4.69072 18.24 9.5 18.24C14.3093 18.24 18.24 14.3093 18.24 9.5C18.24 4.68996 14.3093 0.76 9.5 0.76C4.69072 0.76 0.76 4.68996 0.76 9.5Z" fill-rule="evenodd"/>
+	</g>
+	<defs>
+		<clipPath id="clip_3">
+			<rect x="-1407" y="-17" width="1440" height="2985" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_3)">
+		<path fill="none" stroke="rgb(255,255,255)" stroke-width="1" stroke-miterlimit="4" d="M0 9.5C0 4.25296 4.25296 0 9.5 0C14.747 0 19 4.25296 19 9.5C19 14.7463 14.747 19 9.5 19C4.25296 19 0 14.7463 0 9.5ZM0.76 9.5C0.76 14.3093 4.69072 18.24 9.5 18.24C14.3093 18.24 18.24 14.3093 18.24 9.5C18.24 4.68996 14.3093 0.76 9.5 0.76C4.69072 0.76 0.76 4.68996 0.76 9.5Z" fill-rule="evenodd"/>
+	</g>
+</svg>
