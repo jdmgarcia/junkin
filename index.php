@@ -25,7 +25,7 @@
         <test>Header content</test>
       </div>
       <div class="content-container intenal-banner">
-        <h1 class="intenal-banner-title">Title</h1>
+        <h1 class="intenal-banner-title">THE NEW TITLE</h1>
       </div>
     </header>
 
