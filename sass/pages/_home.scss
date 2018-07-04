@@ -54,6 +54,7 @@ body {
 }
 
 .home-header {
+  @include flex-row-nowrap-center;
   background-image: url("../../img/home-header.png");
   background-size: auto;
   background-position: center bottom;
@@ -63,13 +64,9 @@ body {
   position: relative;
 }
 
-/* add background image*/
-
-/*check if reset exists*/
 
 .margin-center {
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
 }
 
 .home-nav-bar{
@@ -81,8 +78,7 @@ body {
 .nav-tabs-container{
   display: block;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
   background-color: gainsboro;
 }
 
@@ -107,16 +103,11 @@ body {
 }
 
 .home-header-title {
-	position: relative;
-	top: 50%;
   font-weight: 900;
   font-size: 40px;
-  /*change font*/
   text-align: center;
   text-transform: uppercase;
   color: white;
-  /*change color to variabl*/
-  transform: translate(0, -50%);
 }
 
 .home-body-titles {
@@ -157,59 +148,44 @@ body {
   height: 200px;
   color: white;
   height: 478px;
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 .tour-classic{
 	background-image: url("../../img/ways-classic.png");
-  background-color: grey;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
 }
+
 .tour-costal{
-background-image: url("../../img/ways-costal.png");
-  background-color: grey;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../../img/ways-costal.png");
 }
 
 .tour-cycle{
 	background-image: url("../../img/ways-cycle.png");
-  background-color: grey;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .tour-rome{
 	background-image: url("../../img/ways-rome.png");
-  background-color: grey;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .tour-end-of-the-world{
 	background-image: url("../../img/ways-end_of_the_world.png");
-  background-color: grey;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .home-body-tour-header {
 	@include flex-row-nowrap-center;
+  width: 100%;
 }
 
 .home-body-tour-title {
 	@include flex-row-nowrap-center;
   flex: 1 1 100%;
   font-size: 15px;
-  top: -200px;
+  top: -130px;
   text-transform: uppercase;
+  width: 100%;
 
 	&:before {
 	  background-color: white;
@@ -237,10 +213,6 @@ background-image: url("../../img/ways-costal.png");
 
 .home-body-tour-text {
 	text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   font-size: 30px;
   font-weight: 900;
@@ -250,8 +222,6 @@ background-image: url("../../img/ways-costal.png");
 .home-body-tour-goto {
 	position: absolute;
 	top: 425px;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .home-route-planner-container {
@@ -331,8 +301,7 @@ background-image: url("../../img/ways-costal.png");
 }
 
 .home-body-about-icon {
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
   display: block;
   fill: grey;
   width: 40px;
@@ -416,8 +385,7 @@ background-image: url("../../img/ways-costal.png");
 }
 
 .home-body-experiences-memories_link-text {
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
   position: relative;
   top: 120px;
   width: 80%;
@@ -442,8 +410,7 @@ background-image: url("../../img/ways-costal.png");
 .home-newsletter-form {
   width: 1180px;
   height: 230px;
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
   border-radius: 2px;
   background-color: #c7bc95;
   padding: 0 60px;
@@ -475,8 +442,7 @@ background-image: url("../../img/ways-costal.png");
 
 .newsletter-form-input {
 	@include flex-row-nowrap-center;
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
   clear: both;
   width: 80%;
   margin: 5px;
@@ -511,8 +477,7 @@ background-image: url("../../img/ways-costal.png");
 	@include flex-row-nowrap-center;
   height: 150px;
   width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  @include margins-auto;
 }
 
 
@@ -573,46 +538,5 @@ background-image: url("../../img/ways-costal.png");
 
 .home-footer-socialmedia{
 	clear: both;
-
 }
-
-.fa {
-  padding: 5px;
-  font-size: 10px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 10px 35px 10px 5px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: white;
-  color: grey;
-}
-
-.fa-twitter {
-  background: white;
-  color: grey;
-}
-
-.fa-pinterest {
-  background: white;
-  color: grey;
-}
-
-.fa-instagram {
-  background: white;
-  color: grey;
-}
-
-.fa-google {
-  background: white;
-  color: grey;
-}
-
 /*=====  End of HOME  ======*/

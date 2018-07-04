@@ -113,4 +113,9 @@
   flex-flow: column nowrap;
   position: relative;
 }
+
+@mixin margins-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 /*=====  End of MIXINS  ======*/
