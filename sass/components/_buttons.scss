@@ -2,6 +2,46 @@
 =            BUTTONS            =
 ===============================*/
 
+.home-button {
+  border-radius: 3px;
+  color: white;
+  background-color: orange;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  padding: 15px 50px;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  height: 100%;
+}
 
+.reminder-button {
+  border-radius: 3px;
+  color: white;
+  background-color: orange;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.footer-button{
+	border: white 2px solid;
+	text-decoration: none;
+	border-radius: 10px;
+	color: white;
+	padding: 5px 10px;
+	float: right;
+}
 
 /*=====  End of BUTTONS  ======*/

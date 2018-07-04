@@ -81,4 +81,36 @@
   bottom: $bottom;
 }
 
+@mixin flex-row-nowrap-center{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@mixin flex-row-nowrap{
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+@mixin flex-row-wrap{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+@mixin flex-col-nowrap-center{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@mixin flex-col-nowrap{
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
 /*=====  End of MIXINS  ======*/
